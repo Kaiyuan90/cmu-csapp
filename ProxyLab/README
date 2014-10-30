@@ -1,3 +1,36 @@
+This is a course project from course: Introduction to Computer System
+
+1 Introduction
+A proxy server is a computer program that acts as an intermediary between clients making requests to access
+resources and the servers that satisfy those requests by serving content. A web proxy is a special type of
+proxy server whose clients are typically web browsers and whose servers are the same servers that browsers
+use. When a web browser uses a proxy, it contacts the proxy instead of communicating directly with the web
+server; the proxy forwards its client’s request to the web server, reads the server’s response, then forwards
+the response to the client.
+Proxies are useful for many purposes. Sometimes proxies are used in firewalls, so that browsers behind a
+firewall can only contact a server beyond the firewall via the proxy. A proxy may also perform translations
+on pages, for example, to make them viewable on web-enabled phones. Importantly, proxies are used as
+anonymizers: by stripping requests of all identifying information, a proxy can make the browser anonymous
+to web servers. Proxies can even be used to cache web objects by storing local copies of objects from servers
+then responding to future requests by reading them out of its cache rather than by communicating again with
+remote servers.
+
+
+2 Objective
+The objective will be writing a simple HTTP proxy that caches web objects. The Proxy can support HTTP GET operation and 
+handle multiple requests at one time. This is more like a backend thing.
+
+3 Technical Details
+Used POSIX Thread to enable concurrency and Semaphore to ensure thread safety. For the cache structure, I used a
+linked list to meet the project objective. This could work well for small cache but will be super slow for larger
+system. Therefore, if I will work on it further, I will use a hashmap combining double linkedlist to implement 
+the LRU cache.
+
+
+
+
+
+BELOW IS THE DESCRIPTION OF THE FILES
 ####################################################################
 # CS:APP Proxy Lab
 #
