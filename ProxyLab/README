@@ -11,6 +11,8 @@ The objective will be writing a simple HTTP proxy that caches web objects. The P
 3 Technical Details
 Used POSIX Thread to enable concurrency and Semaphore to ensure thread safety. For the cache structure, I used a linked list to meet the project objective. This could work well for small cache but will be super slow for larger system. Therefore, if I will work on it further, I will use a hashmap combining double linkedlist to implement the LRU cache.
 
+4. Details about my work
+proxy.c  proxy.h  cache.c These files are implemented by myself and the others are provided by the instructor. This program act as a basic proxy which can handle muiltiple GET requests.
 
 
 
