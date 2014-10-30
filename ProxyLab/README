@@ -6,14 +6,10 @@ Proxies are useful for many purposes. Sometimes proxies are used in firewalls, s
 
 
 2 Objective
-The objective will be writing a simple HTTP proxy that caches web objects. The Proxy can support HTTP GET operation and 
-handle multiple requests at one time. This is more like a backend thing.
+The objective will be writing a simple HTTP proxy that caches web objects. The Proxy can support HTTP GET operation and handle multiple requests at one time. This is more like a backend thing.
 
 3 Technical Details
-Used POSIX Thread to enable concurrency and Semaphore to ensure thread safety. For the cache structure, I used a
-linked list to meet the project objective. This could work well for small cache but will be super slow for larger
-system. Therefore, if I will work on it further, I will use a hashmap combining double linkedlist to implement 
-the LRU cache.
+Used POSIX Thread to enable concurrency and Semaphore to ensure thread safety. For the cache structure, I used a linked list to meet the project objective. This could work well for small cache but will be super slow for larger system. Therefore, if I will work on it further, I will use a hashmap combining double linkedlist to implement the LRU cache.
 
 
 
